@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/blog</id>
+  <link href="http://blog.url.com/blog"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-01-03T19:00:00-05:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Active Record</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/01/04/active-record.html"/>
+    <id>http://blog.url.com/blog/2015/01/04/active-record.html</id>
+    <published>2015-01-03T19:00:00-05:00</published>
+    <updated>2015-09-08T18:20:56-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2&gt;What is Active Record&lt;/h2&gt;
+
+&lt;p&gt;Active Record is an API which is part of the Ruby on Rails framework. It is the model in the &amp;#39;MVC&amp;#39; system. Active Record is responsible for all the business data and logic that is saved to the database.&lt;/p&gt;
+
+&lt;h2&gt;Why is it so awesome?&lt;/h2&gt;
+
+&lt;p&gt;Active Record allows rails developers to program all the business logic using Ruby without the need for SQL and works with almost all SQL relational databases. This means that Active Record can use one piece of code and it can work for different SQL Databases. Behind the scenes the API is making SQL queries on the database. Active Record uses the proper SQL query for whichever SQL database you choose. (Example: You may have a SQLite database for your UAT environment but a Oracle Database for Production. Active Record will use the correct queries for each environment without the need for duplicative code. )&lt;/p&gt;
+
+&lt;h2&gt;What else can it do?&lt;/h2&gt;
+
+&lt;p&gt;It can also help with assigning many to many or one to one relationships.&lt;/p&gt;
+
+&lt;h2&gt;Any Negatives?&lt;/h2&gt;
+
+&lt;p&gt;The only negative is that it requires you to read documentation about the Active Record API in Rails. The good news is if you want to use SQL queries you can still do so.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Blocs, Procs, and Lambdas</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/12/07/blocs-procs-lambdas.html"/>
+    <id>http://blog.url.com/blog/2014/12/07/blocs-procs-lambdas.html</id>
+    <published>2014-12-06T19:00:00-05:00</published>
+    <updated>2015-09-08T18:20:56-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2&gt;Block&lt;/h2&gt;
+
+&lt;p&gt;A Ruby Block is a way to to iterate through an array or hash using a method like .each. It can be confusing for programmers coming from different languages.
+Block Code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;array = [1,2,3,4,5]
+array.each { |x| # The x parameter represents each item in the array but can be called anything like &amp;#39;y&amp;#39; or &amp;#39;item&amp;#39;
+#Block
+puts x # Will print each item of the array to the terminal screen.
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The code above simply prints each item of the array in the terminal as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1
+2
+3
+4
+5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Procs&lt;/h2&gt;
+
+&lt;p&gt;A Proc or procedure allows you to make an object and call it later by using the &lt;code&gt;.call&lt;/code&gt; method.
+Procs Code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;square = Proc.new{|n| n * n }
+multiply = Proc.new {|x, y| x * y }
+
+p square.call(3)              # or you may use this syntax square[3] 
+p multiply.call(4, 3)      # or you may use this syntax multiply[4, 3] 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, in the first call &lt;code&gt;square.call(3)&lt;/code&gt;. The number three is the parameter that is defined as &amp;#39;n&amp;#39; in the square method. But in the multiply method there are two parameters, 4 and 3 which are x and y in the method.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;9
+12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Lambdas&lt;/h2&gt;
+
+&lt;p&gt;Both procs and Lambdas are kinds of Proc classes. The only difference is how they return an object. I found a post here that has more info on their differences.
+Lambdas Code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;sentence = lambda {puts &amp;quot;Hello Boys and Girls.&amp;quot;} # same as sentence = proc {puts &amp;quot;Hello Boys and Girls.&amp;quot;}
+sentence.call
+puts &amp;quot;Is sentence a lambda - #{sentence.lambda?}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Much like the Procs code, in the Lambdas Code, the method is called using &lt;code&gt;.call&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hello Boys and Girls.
+Is sentence a lambda - true
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ruby Classes 101</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/11/30/ruby-classes.html"/>
+    <id>http://blog.url.com/blog/2014/11/30/ruby-classes.html</id>
+    <published>2014-11-29T19:00:00-05:00</published>
+    <updated>2015-09-08T18:20:56-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2&gt;Best Use Cases for Classes&lt;/h2&gt;
+
+&lt;p&gt;The best way to use Classes is when working with data whose methods repeat and have similar data structure. Let&amp;#39;s say we had a Sports statistics website. We can have a class that represents a player. Each player needs to be able to be able to have data about them stored (Height, age, stats, picture, rating) and also be able to have different methods like one that prints a graphical card image of the player.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Player
+    attr_accessor :height, :dob, :stats, :picture, :rating, :name
+    def initialize(name,height,dob,rating)
+        @name = name
+        @height = height
+        @dob = dob
+        @stats = {}
+        @rating = rating
+    end
+
+    def printInfo
+        puts &amp;quot;name: #{@name}&amp;quot;
+        puts &amp;quot;height: #{@height}&amp;quot;
+        puts &amp;quot;dob: #{@dob}&amp;quot;
+        puts &amp;quot;rating: #{@rating}&amp;quot;
+    end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Including Our Class File&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;classes.rb&lt;/code&gt; file above is a good example of when to use a classes. The initialize method stores info stores default info about each player. The printInfo method prints to the console some info about that player. Let&amp;#39;s make a new Player and and then use the printInfo method to print player info.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;require_relative &amp;#39;classes.rb&amp;#39;
+p1 = Player.new(&amp;quot;Rubin TI Jones&amp;quot;,&amp;quot;5&amp;#39;11&amp;quot;,&amp;quot;01-13-1989&amp;quot;,&amp;quot;101&amp;quot;) # (name,height,dob,rating)
+p1.rating =&amp;quot;105&amp;quot;
+p1.printInfo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The expected Output will be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;name: Rubin TI
+height: 5&amp;#39;11
+dob: 01-13-1989
+rating: 101
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Enumerables in Ruby</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/11/23/enumerable-methods.html"/>
+    <id>http://blog.url.com/blog/2014/11/23/enumerable-methods.html</id>
+    <published>2014-11-22T19:00:00-05:00</published>
+    <updated>2015-09-08T18:20:56-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2&gt;What is an Enumerable?&lt;/h2&gt;
+
+&lt;p&gt;This post will focus on explaining Enumerables for beginners and the map Enumerable works. Enumerable are built in methods that can be used on a string, array, or hash. Enumerables are useful because one doesn&amp;#39;t have to write the method from scratch.&lt;/p&gt;
+
+&lt;h2&gt;Map&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;#39;map { |item| block } → new_ary&amp;#39;&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;Take for example the &amp;#39;map&amp;#39; Enumerable. This enumerable returns a new array with the values returned by the block. It&amp;#39;s useful when one needs to iterate through an array and change a bunch of values. See example below. Each item is multiplied by 3.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;def multiply(array) 
+    array.map {|x| 
+        x*2 
+    } 
+end 
+
+array = [1,2] 
+newArray = multiply(array) 
+p newArray 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The above code will make &lt;code&gt;p newArray&lt;/code&gt; will output &lt;code&gt;[2, 4]&lt;/code&gt; to the console.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ruby Hashes and Arrays</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/11/16/ruby-hashes-arrays.html"/>
+    <id>http://blog.url.com/blog/2014/11/16/ruby-hashes-arrays.html</id>
+    <published>2014-11-15T19:00:00-05:00</published>
+    <updated>2015-09-08T18:20:56-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2&gt;Arrays&lt;/h2&gt;
+
+&lt;p&gt;An Array is represented by square brackets &lt;code&gt;[ ]&lt;/code&gt;. Below is some sample code for an example of an array in ruby. The array index starts at 0 so to print the first item to the console one would type 
+puts &lt;code&gt;array1[0]&lt;/code&gt;. To print the second item in the array one would type &amp;quot;puts array1[1]&amp;quot; and so on for the next sequential item in the array.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;array1 = [&amp;quot;hello&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;!!!&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Hashes&lt;/h2&gt;
+
+&lt;p&gt;A hash is represented by squigly brackets &lt;code&gt;{ }&lt;/code&gt;. Below is some sample code for an example of a hash in ruby. Each city is represented by a symbol or abbreviation for the city it represents. Example, &lt;code&gt;:bk&lt;/code&gt; is the symbol for the city &amp;quot;Brooklyn&amp;quot;. To print each item in the hash you put the name of the hash followed by a square bracket with the key inside as show to the right. &lt;code&gt;location[:bk]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;location = { :bk =&amp;gt; &amp;quot;Brooklyn&amp;quot;, :si =&amp;gt; &amp;quot;Staten Island&amp;quot;, :ma =&amp;gt; &amp;quot;Manhatten&amp;quot;, :bx =&amp;gt; &amp;quot;The Bronx&amp;quot;, :qu =&amp;gt; &amp;quot;Queens&amp;quot; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Similarities between Arrays and Hashes.&lt;/h2&gt;
+
+&lt;p&gt;Both Arrays and Hashes are considered indexed collections. Both arrays and hashes store a series of objects like strings, numbers, or other arrays using a key. Also both, can expand to hold more objects.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Difference between Static, Absolute, Relative, Fixed Positioning.</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/11/09/css-positioning.html"/>
+    <id>http://blog.url.com/blog/2014/11/09/css-positioning.html</id>
+    <published>2014-11-08T19:00:00-05:00</published>
+    <updated>2015-09-08T18:20:56-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I wrote this post so beginners can easily figure out the difference between the various positiong types. Please let me know if you have questions or if anything in this post is not clear. I would be happy to help.&lt;/p&gt;
+
+&lt;h2&gt;Static&lt;/h2&gt;
+
+&lt;p&gt;This is the default positioning for every single page element. It just means the element flows in the order it appears on the page.&lt;/p&gt;
+
+&lt;h2&gt;Absolute&lt;/h2&gt;
+
+&lt;p&gt;This positoning type allows one put the element exactly where you want it to be on the page regardless of where the element is terms of its order on the page.&lt;/p&gt;
+
+&lt;h2&gt;Relative&lt;/h2&gt;
+
+&lt;p&gt;This poistioning allows you to move the element relative to where the element is in in its static state. An Example would be if you want to move 4 pixels to the left Like show below.&lt;/p&gt;
+
+&lt;h2&gt;Fixed&lt;/h2&gt;
+
+&lt;p&gt;This poistioning allows you to place an element anywhere you want and not have effected by scrolling. See Example below where header stays on top when user scrolls.&lt;/p&gt;
+
+&lt;h2&gt;Helpful Resources&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/"&gt;Helpful css-tricks.com post&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.codecademy.com/courses/advanced-css-positioning/0/1"&gt;Codecademy Positioning Excersise&lt;/a&gt; &lt;/p&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gaba Flow</title>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta name="keywords" content="site keywords, hogehoge, fugafuga">
+  <meta name="description" content="Example Site Description.">
+  <meta name="author" content="Justin Gaba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>Blocs, Procs, and Lambdas</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+  <script src="/javascripts/all.js"></script>
+</head>
+<body>
+
+  <header id="nav">
+    <nav>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><h1>GabaFlow <i class="fa fa-rocket "></i></h1></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar-collapse">
+          <ul>
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="active">
+              <a  class="" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid .strftime("%m/%d/%Y") -->
+    </nav>
+  </header>
+  <div id="article_splash">
+        <h2>Blocs, Procs, and Lambdas</h2>
+        <!--  -->
+        <span>Posted on: 12/07/2014</span>
+        <span>Read Time: 5 Minutes </span>
+
+
+  </div>
+  <div id="article">
+
+  <h2>Block</h2>
+
+<p>A Ruby Block is a way to to iterate through an array or hash using a method like .each. It can be confusing for programmers coming from different languages.
+Block Code</p>
+
+<pre><code class="ruby">array = [1,2,3,4,5]
+array.each { |x| # The x parameter represents each item in the array but can be called anything like &#39;y&#39; or &#39;item&#39;
+#Block
+puts x # Will print each item of the array to the terminal screen.
+}
+</code></pre>
+
+<p>The code above simply prints each item of the array in the terminal as shown below.</p>
+
+<pre><code>1
+2
+3
+4
+5
+</code></pre>
+
+<h2>Procs</h2>
+
+<p>A Proc or procedure allows you to make an object and call it later by using the <code>.call</code> method.
+Procs Code</p>
+
+<pre><code class="ruby">square = Proc.new{|n| n * n }
+multiply = Proc.new {|x, y| x * y }
+
+p square.call(3)              # or you may use this syntax square[3] 
+p multiply.call(4, 3)      # or you may use this syntax multiply[4, 3] 
+</code></pre>
+
+<p>As you can see, in the first call <code>square.call(3)</code>. The number three is the parameter that is defined as &#39;n&#39; in the square method. But in the multiply method there are two parameters, 4 and 3 which are x and y in the method.</p>
+
+<pre><code>9
+12
+</code></pre>
+
+<h2>Lambdas</h2>
+
+<p>Both procs and Lambdas are kinds of Proc classes. The only difference is how they return an object. I found a post here that has more info on their differences.
+Lambdas Code</p>
+
+<pre><code class="ruby">sentence = lambda {puts &quot;Hello Boys and Girls.&quot;} # same as sentence = proc {puts &quot;Hello Boys and Girls.&quot;}
+sentence.call
+puts &quot;Is sentence a lambda - #{sentence.lambda?}&quot;
+</code></pre>
+
+<p>Much like the Procs code, in the Lambdas Code, the method is called using <code>.call</code>.</p>
+
+<pre><code>Hello Boys and Girls.
+Is sentence a lambda - true
+</code></pre>
+
+<section id="back_blog"><a href="/blog"><i class="fa fa-space-shuttle fa-spin"></i> Back to Blog</a></section>
+  
+</div>
+  <div class="copyright-bar-2 bg-silver">
+    <div class="container text-center">
+      <p class="small">Made with <i class="fa fa-heart pomegranate"></i> on Planet Earth</p>
+    </div>
+  </div>
+</body>
+</html>

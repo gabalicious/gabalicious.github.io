@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gaba Flow</title>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta name="keywords" content="site keywords, hogehoge, fugafuga">
+  <meta name="description" content="Example Site Description.">
+  <meta name="author" content="Justin Gaba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>The Middleman</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+  <script src="/javascripts/all.js"></script>
+</head>
+<body>
+
+  <header id="nav">
+    <nav>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><h1>GabaFlow <i class="fa fa-rocket "></i></h1></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar-collapse">
+          <ul>
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="active">
+              <a  class="" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <div id="blog">
+  <br><br><br>
+  <p>Page 2 of 3</p>
+
+    <p><a href="/blog/default.html">Previous page</a></p>
+
+  <h2><a href="/blog/2014/11/23/enumerable-methods.html">Enumerables in Ruby</a> <span>Nov 23</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <h2>What is an Enumerable?</h2>
+
+<p>This post will focus on explaining Enumerables for beginners and the map Enumerable works. Enumerable are built in methods that can be used on a string, array, or hash. Enumerables are useful because one doesn&#39;t have to write the method from scratch.</p>
+
+<h2>Map</h2>
+
+<p><code>&#39;map { |item| block } → new_ary&#39;</code> </p>
+
+<p>Take for example the &#39;map&#39; Enumerable. This enumerable returns a new array with the values returned by the block. It&#39;s useful when one needs to iterate through an array and change a bunch of values. See example below. Each item is multiplied by 3.</p>
+
+<pre><code class="ruby">def multiply(array) 
+    array.map {|x| 
+        x*2 
+    } 
+end 
+
+array = [1,2] 
+newArray = multiply(array) 
+p newArray 
+</code></pre>
+
+<h2>Conclusion</h2>
+
+<p>The above code will make <code>p newArray</code> will output <code>[2, 4]</code> to the console.</p>
+
+  <h2><a href="/blog/2014/11/16/ruby-hashes-arrays.html">Ruby Hashes and Arrays</a> <span>Nov 16</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <h2>Arrays</h2>
+
+<p>An Array is represented by square brackets <code>[ ]</code>. Below is some sample code for an example of an array in ruby. The array index starts at 0 so to print the first item to the console one would type 
+puts <code>array1[0]</code>. To print the second item in the array one would type &quot;puts array1[1]&quot; and so on for the next sequential item in the array.</p>
+
+<pre><code class="ruby">array1 = [&quot;hello&quot;,&quot;world&quot;,&quot;!!!&quot;]
+</code></pre>
+
+<h2>Hashes</h2>
+
+<p>A hash is represented by squigly brackets <code>{ }</code>. Below is some sample code for an example of a hash in ruby. Each city is represented by a symbol or abbreviation for the city it represents. Example, <code>:bk</code> is the symbol for the city &quot;Brooklyn&quot;. To print each item in the hash you put the name of the hash followed by a square bracket with the key inside as show to the right. <code>location[:bk]</code>.</p>
+
+<pre><code class="ruby">location = { :bk =&gt; &quot;Brooklyn&quot;, :si =&gt; &quot;Staten Island&quot;, :ma =&gt; &quot;Manhatten&quot;, :bx =&gt; &quot;The Bronx&quot;, :qu =&gt; &quot;Queens&quot; }
+</code></pre>
+
+<h2>Similarities between Arrays and Hashes.</h2>
+
+<p>Both Arrays and Hashes are considered indexed collections. Both arrays and hashes store a series of objects like strings, numbers, or other arrays using a key. Also both, can expand to hold more objects.</p>
+
+  <h2><a href="/blog/2014/11/09/css-positioning.html">Difference between Static, Absolute, Relative, Fixed Positioning.</a> <span>Nov  9</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>I wrote this post so beginners can easily figure out the difference between the various positiong types. Please let me know if you have questions or if anything in this post is not clear. I would be happy to help.</p>
+
+<h2>Static</h2>
+
+<p>This is the default positioning for every single page element. It just means the element flows in the order it appears on the page.</p>
+
+<h2>Absolute</h2>
+
+<p>This positoning type allows one put the element exactly where you want it to be on the page regardless of where the element is terms of its order on the page.</p>
+
+<h2>Relative</h2>
+
+<p>This poistioning allows you to move the element relative to where the element is in in its static state. An Example would be if you want to move 4 pixels to the left Like show below.</p>
+
+<h2>Fixed</h2>
+
+<p>This poistioning allows you to place an element anywhere you want and not have effected by scrolling. See Example below where header stays on top when user scrolls.</p>
+
+<h2>Helpful Resources</h2>
+
+<p><a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">Helpful css-tricks.com post</a> </p>
+
+<p><a href="http://www.codecademy.com/courses/advanced-css-positioning/0/1">Codecademy Positioning Excersise</a> </p>
+
+
+    <p><a href="/blog/default/page/3.html">Next page</a></p>
+
+</div>
+  <div class="copyright-bar-2 bg-silver">
+    <div class="container text-center">
+      <p class="small">Made with <i class="fa fa-heart pomegranate"></i> on Planet Earth</p>
+    </div>
+  </div>
+</body>
+</html>

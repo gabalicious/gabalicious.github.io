@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gaba Flow</title>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta name="keywords" content="site keywords, hogehoge, fugafuga">
+  <meta name="description" content="Example Site Description.">
+  <meta name="author" content="Justin Gaba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>The Middleman</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+  <script src="/javascripts/all.js"></script>
+</head>
+<body>
+
+  <header id="nav">
+    <nav>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><h1>GabaFlow <i class="fa fa-rocket "></i></h1></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar-collapse">
+          <ul>
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="active">
+              <a  class="" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <div id="blog">
+  <br><br><br>
+  <p>Page 1 of 3</p>
+
+
+  <h2><a href="/blog/2015/01/04/active-record.html">Active Record</a> <span>Jan  4</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <h2>What is Active Record</h2>
+
+<p>Active Record is an API which is part of the Ruby on Rails framework. It is the model in the &#39;MVC&#39; system. Active Record is responsible for all the business data and logic that is saved to the database.</p>
+
+<h2>Why is it so awesome?</h2>
+
+<p>Active Record allows rails developers to program all the business logic using Ruby without the need for SQL and works with almost all SQL relational databases. This means that Active Record can use one piece of code and it can work for different SQL Databases. Behind the scenes the API is making SQL queries on the database. Active Record uses the proper SQL query for whichever SQL database you choose. (Example: You may have a SQLite database for your UAT environment but a Oracle Database for Production. Active Record will use the correct queries for each environment without the need for duplicative code. )</p>
+
+<h2>What else can it do?</h2>
+
+<p>It can also help with assigning many to many or one to one relationships.</p>
+
+<h2>Any Negatives?</h2>
+
+<p>The only negative is that it requires you to read documentation about the Active Record API in Rails. The good news is if you want to use SQL queries you can still do so.</p>
+
+  <h2><a href="/blog/2014/12/07/blocs-procs-lambdas.html">Blocs, Procs, and Lambdas</a> <span>Dec  7</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <h2>Block</h2>
+
+<p>A Ruby Block is a way to to iterate through an array or hash using a method like .each. It can be confusing for programmers coming from different languages.
+Block Code</p>
+
+<pre><code class="ruby">array = [1,2,3,4,5]
+array.each { |x| # The x parameter represents each item in the array but can be called anything like &#39;y&#39; or &#39;item&#39;
+#Block
+puts x # Will print each item of the array to the terminal screen.
+}
+</code></pre>
+
+<p>The code above simply prints each item of the array in the terminal as shown below.</p>
+
+<pre><code>1
+2
+3
+4
+5
+</code></pre>
+
+<h2>Procs</h2>
+
+<p>A Proc or procedure allows you to make an object and call it later by using the <code>.call</code> method.
+Procs Code</p>
+
+<pre><code class="ruby">square = Proc.new{|n| n * n }
+multiply = Proc.new {|x, y| x * y }
+
+p square.call(3)              # or you may use this syntax square[3] 
+p multiply.call(4, 3)      # or you may use this syntax multiply[4, 3] 
+</code></pre>
+
+<p>As you can see, in the first call <code>square.call(3)</code>. The number three is the parameter that is defined as &#39;n&#39; in the square method. But in the multiply method there are two parameters, 4 and 3 which are x and y in the method.</p>
+
+<pre><code>9
+12
+</code></pre>
+
+<h2>Lambdas</h2>
+
+<p>Both procs and Lambdas are kinds of Proc classes. The only difference is how they return an object. I found a post here that has more info on their differences.
+Lambdas Code</p>
+
+<pre><code class="ruby">sentence = lambda {puts &quot;Hello Boys and Girls.&quot;} # same as sentence = proc {puts &quot;Hello Boys and Girls.&quot;}
+sentence.call
+puts &quot;Is sentence a lambda - #{sentence.lambda?}&quot;
+</code></pre>
+
+<p>Much like the Procs code, in the Lambdas Code, the method is called using <code>.call</code>.</p>
+
+<pre><code>Hello Boys and Girls.
+Is sentence a lambda - true
+</code></pre>
+
+  <h2><a href="/blog/2014/11/30/ruby-classes.html">Ruby Classes 101</a> <span>Nov 30</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <h2>Best Use Cases for Classes</h2>
+
+<p>The best way to use Classes is when working with data whose methods repeat and have similar data structure. Let&#39;s say we had a Sports statistics website. We can have a class that represents a player. Each player needs to be able to be able to have data about them stored (Height, age, stats, picture, rating) and also be able to have different methods like one that prints a graphical card image of the player.</p>
+
+<pre><code class="ruby">class Player
+    attr_accessor :height, :dob, :stats, :picture, :rating, :name
+    def initialize(name,height,dob,rating)
+        @name = name
+        @height = height
+        @dob = dob
+        @stats = {}
+        @rating = rating
+    end
+
+    def printInfo
+        puts &quot;name: #{@name}&quot;
+        puts &quot;height: #{@height}&quot;
+        puts &quot;dob: #{@dob}&quot;
+        puts &quot;rating: #{@rating}&quot;
+    end
+end
+</code></pre>
+
+<h2>Including Our Class File</h2>
+
+<p>The <code>classes.rb</code> file above is a good example of when to use a classes. The initialize method stores info stores default info about each player. The printInfo method prints to the console some info about that player. Let&#39;s make a new Player and and then use the printInfo method to print player info.</p>
+
+<pre><code class="ruby">require_relative &#39;classes.rb&#39;
+p1 = Player.new(&quot;Rubin TI Jones&quot;,&quot;5&#39;11&quot;,&quot;01-13-1989&quot;,&quot;101&quot;) # (name,height,dob,rating)
+p1.rating =&quot;105&quot;
+p1.printInfo
+</code></pre>
+
+<p>The expected Output will be:</p>
+
+<pre><code>name: Rubin TI
+height: 5&#39;11
+dob: 01-13-1989
+rating: 101
+</code></pre>
+
+
+    <p><a href="/blog/default/page/2.html">Next page</a></p>
+
+</div>
+  <div class="copyright-bar-2 bg-silver">
+    <div class="container text-center">
+      <p class="small">Made with <i class="fa fa-heart pomegranate"></i> on Planet Earth</p>
+    </div>
+  </div>
+</body>
+</html>

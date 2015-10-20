@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gaba Flow</title>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta name="keywords" content="site keywords, hogehoge, fugafuga">
+  <meta name="description" content="Example Site Description.">
+  <meta name="author" content="Justin Gaba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>Ruby Classes 101</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+  <script src="/javascripts/all.js"></script>
+</head>
+<body>
+
+  <header id="nav">
+    <nav>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><h1>GabaFlow <i class="fa fa-rocket "></i></h1></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar-collapse">
+          <ul>
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="active">
+              <a  class="" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid .strftime("%m/%d/%Y") -->
+    </nav>
+  </header>
+  <div id="article_splash">
+        <h2>Ruby Classes 101</h2>
+        <!--  -->
+        <span>Posted on: 11/30/2014</span>
+        <span>Read Time: 5 Minutes </span>
+
+
+  </div>
+  <div id="article">
+
+  <h2>Best Use Cases for Classes</h2>
+
+<p>The best way to use Classes is when working with data whose methods repeat and have similar data structure. Let&#39;s say we had a Sports statistics website. We can have a class that represents a player. Each player needs to be able to be able to have data about them stored (Height, age, stats, picture, rating) and also be able to have different methods like one that prints a graphical card image of the player.</p>
+
+<pre><code class="ruby">class Player
+    attr_accessor :height, :dob, :stats, :picture, :rating, :name
+    def initialize(name,height,dob,rating)
+        @name = name
+        @height = height
+        @dob = dob
+        @stats = {}
+        @rating = rating
+    end
+
+    def printInfo
+        puts &quot;name: #{@name}&quot;
+        puts &quot;height: #{@height}&quot;
+        puts &quot;dob: #{@dob}&quot;
+        puts &quot;rating: #{@rating}&quot;
+    end
+end
+</code></pre>
+
+<h2>Including Our Class File</h2>
+
+<p>The <code>classes.rb</code> file above is a good example of when to use a classes. The initialize method stores info stores default info about each player. The printInfo method prints to the console some info about that player. Let&#39;s make a new Player and and then use the printInfo method to print player info.</p>
+
+<pre><code class="ruby">require_relative &#39;classes.rb&#39;
+p1 = Player.new(&quot;Rubin TI Jones&quot;,&quot;5&#39;11&quot;,&quot;01-13-1989&quot;,&quot;101&quot;) # (name,height,dob,rating)
+p1.rating =&quot;105&quot;
+p1.printInfo
+</code></pre>
+
+<p>The expected Output will be:</p>
+
+<pre><code>name: Rubin TI
+height: 5&#39;11
+dob: 01-13-1989
+rating: 101
+</code></pre>
+
+<section id="back_blog"><a href="/blog"><i class="fa fa-space-shuttle fa-spin"></i> Back to Blog</a></section>
+  
+</div>
+  <div class="copyright-bar-2 bg-silver">
+    <div class="container text-center">
+      <p class="small">Made with <i class="fa fa-heart pomegranate"></i> on Planet Earth</p>
+    </div>
+  </div>
+</body>
+</html>

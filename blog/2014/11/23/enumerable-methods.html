@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gaba Flow</title>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta name="keywords" content="site keywords, hogehoge, fugafuga">
+  <meta name="description" content="Example Site Description.">
+  <meta name="author" content="Justin Gaba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>Enumerables in Ruby</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+  <script src="/javascripts/all.js"></script>
+</head>
+<body>
+
+  <header id="nav">
+    <nav>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><h1>GabaFlow <i class="fa fa-rocket "></i></h1></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar-collapse">
+          <ul>
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="active">
+              <a  class="" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid .strftime("%m/%d/%Y") -->
+    </nav>
+  </header>
+  <div id="article_splash">
+        <h2>Enumerables in Ruby</h2>
+        <!--  -->
+        <span>Posted on: 11/23/2014</span>
+        <span>Read Time: 5 Minutes </span>
+
+
+  </div>
+  <div id="article">
+
+  <h2>What is an Enumerable?</h2>
+
+<p>This post will focus on explaining Enumerables for beginners and the map Enumerable works. Enumerable are built in methods that can be used on a string, array, or hash. Enumerables are useful because one doesn&#39;t have to write the method from scratch.</p>
+
+<h2>Map</h2>
+
+<p><code>&#39;map { |item| block } → new_ary&#39;</code> </p>
+
+<p>Take for example the &#39;map&#39; Enumerable. This enumerable returns a new array with the values returned by the block. It&#39;s useful when one needs to iterate through an array and change a bunch of values. See example below. Each item is multiplied by 3.</p>
+
+<pre><code class="ruby">def multiply(array) 
+    array.map {|x| 
+        x*2 
+    } 
+end 
+
+array = [1,2] 
+newArray = multiply(array) 
+p newArray 
+</code></pre>
+
+<h2>Conclusion</h2>
+
+<p>The above code will make <code>p newArray</code> will output <code>[2, 4]</code> to the console.</p>
+
+<section id="back_blog"><a href="/blog"><i class="fa fa-space-shuttle fa-spin"></i> Back to Blog</a></section>
+  
+</div>
+  <div class="copyright-bar-2 bg-silver">
+    <div class="container text-center">
+      <p class="small">Made with <i class="fa fa-heart pomegranate"></i> on Planet Earth</p>
+    </div>
+  </div>
+</body>
+</html>
