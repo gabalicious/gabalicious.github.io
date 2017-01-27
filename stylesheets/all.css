@@ -1990,14 +1990,14 @@ pre {
     clear: both; }
 
 /* line 11, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, #portfolio .container .row div .portfolio-item-box, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, #portfolio .container .row div .portfolio-item-box, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, #portfolio .container .portfolio-item-box, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, #portfolio .container .portfolio-item-box, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
 /* line 27, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, #portfolio .container .row div .portfolio-item-box {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, #portfolio .container .portfolio-item-box {
   float: left; }
 
 /* line 35, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -2045,7 +2045,7 @@ pre {
   width: 91.66667%; }
 
 /* line 35, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-12, #portfolio .container .row div .portfolio-item-box {
+.col-xs-12, #portfolio .container .portfolio-item-box {
   width: 100%; }
 
 /* line 55, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -2206,7 +2206,7 @@ pre {
 
 @media (min-width: 768px) {
   /* line 27, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, #portfolio .container .row div .portfolio-item-box, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, #portfolio .container .portfolio-item-box, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
   /* line 35, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -2230,7 +2230,7 @@ pre {
     width: 41.66667%; }
 
   /* line 35, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-6, #portfolio .container .row div .portfolio-item-box {
+  .col-sm-6, #portfolio .container .portfolio-item-box {
     width: 50%; }
 
   /* line 35, /Users/justingaba/development/gabalicious.github.io/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -9837,54 +9837,34 @@ button.close {
     margin-top: 1em;
     margin-bottom: 3.5em;
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
-  /* line 183, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-  #portfolio .container ul {
-    display: block;
-    text-align: center;
-    list-style-type: none;
-    margin-top: 1em;
-    margin-bottom: 3.5em; }
-    /* line 191, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-    #portfolio .container ul li {
-      display: inline-block;
-      padding-right: 1.75em;
-      padding-left: 1.75em;
-      font-weight: bold; }
-      /* line 197, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-      #portfolio .container ul li a {
-        text-decoration: none !important;
-        color: #000067; }
-    /* line 204, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-    #portfolio .container ul li:after {
-      padding-left: 3em;
-      content: " / ";
-      font-weight: 100; }
-    /* line 209, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-    #portfolio .container ul li:last-child::after {
-      content: none; }
-  /* line 217, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-  #portfolio .container .row div .portfolio-item-box {
+  /* line 186, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  #portfolio .container .portfolio-item-box {
+    flex-basis: 100%;
     border-radius: .3em; }
-    /* line 223, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-    #portfolio .container .row div .portfolio-item-box .portfolio-item {
+    @media (min-width: 768px) {
+      /* line 186, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      #portfolio .container .portfolio-item-box {
+        flex-basis: 50%; } }
+    /* line 199, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+    #portfolio .container .portfolio-item-box .portfolio-item {
       margin-top: 20px;
       background-color: white;
       border-radius: .3em; }
-      /* line 227, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-      #portfolio .container .row div .portfolio-item-box .portfolio-item .portfolio-thumb {
+      /* line 203, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      #portfolio .container .portfolio-item-box .portfolio-item .portfolio-thumb {
         border-radius: .3em; }
-        /* line 229, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-        #portfolio .container .row div .portfolio-item-box .portfolio-item .portfolio-thumb .img-responsive {
+        /* line 205, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+        #portfolio .container .portfolio-item-box .portfolio-item .portfolio-thumb .img-responsive {
           border-radius: 0.3em 0.3em 0 0; }
-    /* line 236, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-    #portfolio .container .row div .portfolio-item-box .portfolio-details {
+    /* line 212, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+    #portfolio .container .portfolio-item-box .portfolio-details {
       padding-top: 20px;
       margin-bottom: 10px; }
-      /* line 240, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-      #portfolio .container .row div .portfolio-item-box .portfolio-details h5 {
+      /* line 216, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      #portfolio .container .portfolio-item-box .portfolio-details h5 {
         text-align: center; }
-      /* line 244, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-      #portfolio .container .row div .portfolio-item-box .portfolio-details p {
+      /* line 220, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      #portfolio .container .portfolio-item-box .portfolio-details p {
         text-align: left;
         font-size: 1em;
         font-weight: 125;
@@ -9892,29 +9872,29 @@ button.close {
         padding-left: 15px;
         padding-right: 15px; }
 
-/* line 265, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 240, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .thumb-circle, .footer .container .me a, .footer .container .me a img {
   border-radius: 100%;
   width: 200px; }
 
-/* line 271, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 246, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .thumb-circle::after, .footer .container .me a::after, .footer .container .me a img::after {
   content: "";
   display: block;
   clear: both;
   width: 100%; }
 
-/* line 281, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 256, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .footer .container .me a {
   margin: 0 auto; }
-/* line 297, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 272, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .footer .container .contactme {
   text-align: center; }
-/* line 301, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 276, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .footer .container .lead, .footer .container .me p {
   text-align: center; }
 
-/* line 308, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 283, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social {
   overflow: auto;
   display: block;
@@ -9923,7 +9903,7 @@ ul.social {
   margin-top: 1em;
   margin-bottom: 3.5em; }
 
-/* line 317, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 292, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social li {
   list-style-type: none;
   display: inline-block;
@@ -9931,7 +9911,7 @@ ul.social li {
   padding-left: 1.2em;
   font-weight: bold; }
 
-/* line 325, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 300, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social li a i {
   background: #660000;
   color: #fff;
@@ -9942,3 +9922,12 @@ ul.social li a i {
   text-align: center;
   margin-right: 10px;
   padding-top: 15%; }
+
+/* line 320, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
