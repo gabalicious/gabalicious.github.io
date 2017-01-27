@@ -9825,45 +9825,46 @@ button.close {
   padding-top: 30px;
   background: #f1c40f !important;
   background-size: cover; }
-  /* line 168, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  /* line 167, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   #portfolio .container .underlined-title h1 {
     text-align: center;
     color: black;
     font-weight: 100; }
-  /* line 173, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  /* line 172, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   #portfolio .container .underlined-title hr {
     border: 0;
     height: 1px;
     margin-top: 1em;
     margin-bottom: 3.5em;
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
-  /* line 186, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  /* line 185, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   #portfolio .container .portfolio-item-box {
-    flex-basis: 100%;
-    border-radius: .3em; }
+    border-radius: .3em;
+    padding-bottom: 20px;
+    flex-basis: 100%; }
     @media (min-width: 768px) {
-      /* line 186, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      /* line 185, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
       #portfolio .container .portfolio-item-box {
         flex-basis: 50%; } }
     /* line 199, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
     #portfolio .container .portfolio-item-box .portfolio-item {
       margin-top: 20px;
       background-color: white;
-      border-radius: .3em; }
-      /* line 203, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      border-radius: .3em;
+      height: 100%; }
+      /* line 204, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
       #portfolio .container .portfolio-item-box .portfolio-item .portfolio-thumb {
         border-radius: .3em; }
-        /* line 205, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+        /* line 206, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
         #portfolio .container .portfolio-item-box .portfolio-item .portfolio-thumb .img-responsive {
           border-radius: 0.3em 0.3em 0 0; }
-    /* line 212, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+    /* line 213, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
     #portfolio .container .portfolio-item-box .portfolio-details {
-      padding-top: 20px;
-      margin-bottom: 10px; }
-      /* line 216, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      padding-top: 20px; }
+      /* line 217, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
       #portfolio .container .portfolio-item-box .portfolio-details h5 {
         text-align: center; }
-      /* line 220, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+      /* line 221, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
       #portfolio .container .portfolio-item-box .portfolio-details p {
         text-align: left;
         font-size: 1em;
@@ -9872,29 +9873,29 @@ button.close {
         padding-left: 15px;
         padding-right: 15px; }
 
-/* line 240, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 241, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .thumb-circle, .footer .container .me a, .footer .container .me a img {
   border-radius: 100%;
   width: 200px; }
 
-/* line 246, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 247, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .thumb-circle::after, .footer .container .me a::after, .footer .container .me a img::after {
   content: "";
   display: block;
   clear: both;
   width: 100%; }
 
-/* line 256, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 257, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .footer .container .me a {
   margin: 0 auto; }
-/* line 272, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 273, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .footer .container .contactme {
   text-align: center; }
-/* line 276, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 277, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .footer .container .lead, .footer .container .me p {
   text-align: center; }
 
-/* line 283, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 284, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social {
   overflow: auto;
   display: block;
@@ -9903,7 +9904,7 @@ ul.social {
   margin-top: 1em;
   margin-bottom: 3.5em; }
 
-/* line 292, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 293, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social li {
   list-style-type: none;
   display: inline-block;
@@ -9911,7 +9912,7 @@ ul.social li {
   padding-left: 1.2em;
   font-weight: bold; }
 
-/* line 300, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 301, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social li a i {
   background: #660000;
   color: #fff;
@@ -9923,11 +9924,14 @@ ul.social li a i {
   margin-right: 10px;
   padding-top: 15%; }
 
-/* line 320, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 321, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch; }
