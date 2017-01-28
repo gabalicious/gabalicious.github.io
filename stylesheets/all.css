@@ -9829,13 +9829,14 @@ button.close {
   background-size: cover;
   margin-bottom: 0;
   padding-top: 200px;
-  min-height: 1100px;
+  height: 100vh;
   text-align: center; }
 
 /* line 174, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 #portfolio {
+  margin: 0;
   padding-top: 30px;
-  background: #f1c40f !important;
+  background-image: url(http://3innyc.com/wp-content/uploads/2013/10/stars-at-night.jpg);
   background-size: cover; }
   /* line 184, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   #portfolio .container .underlined-title {
@@ -9843,7 +9844,7 @@ button.close {
     /* line 186, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
     #portfolio .container .underlined-title h1 {
       text-align: center;
-      color: black;
+      color: white;
       font-weight: 100; }
     /* line 191, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
     #portfolio .container .underlined-title hr {
@@ -9851,7 +9852,7 @@ button.close {
       height: 1px;
       margin-top: 1em;
       margin-bottom: 3.5em;
-      background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+      background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent); }
   /* line 204, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   #portfolio .container .portfolio-item-box {
     border-radius: .3em;
@@ -9900,27 +9901,34 @@ button.close {
   clear: both;
   width: 100%; }
 
-/* line 276, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-.footer .container .me a {
-  margin: 0 auto; }
-/* line 292, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-.footer .container .contactme {
-  text-align: center; }
-/* line 296, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
-.footer .container .lead, .footer .container .me p {
-  text-align: center; }
+/* line 273, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+.footer {
+  padding-top: 90px;
+  height: 100vh;
+  background-image: url(https://storybird.s3.amazonaws.com/artwork/Jevs/full/scientist-lair-background.jpeg);
+  background-size: cover; }
+  /* line 280, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  .footer .container .me a {
+    margin: 0 auto; }
+  /* line 296, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  .footer .container .contactme {
+    text-align: center;
+    color: white; }
+  /* line 301, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  .footer .container .lead, .footer .container .me p {
+    text-align: center; }
 
-/* line 303, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 308, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 ul.social {
   list-style-type: none;
   margin-top: 1em;
   margin-bottom: 3.5em;
   padding: 0; }
-  /* line 309, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  /* line 314, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   ul.social li {
     list-style-type: none;
     font-weight: bold; }
-    /* line 316, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+    /* line 321, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
     ul.social li a i {
       background: #8F8E8F;
       color: #fff;
@@ -9929,32 +9937,32 @@ ul.social {
       border-radius: 20px;
       font-size: 25px;
       margin: 0 13px; }
-    /* line 326, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+    /* line 331, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
     ul.social li a i::before {
       align-self: center; }
-  /* line 332, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  /* line 337, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   ul.social a:focus {
     text-decoration: none !important; }
-  /* line 335, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+  /* line 340, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
   ul.social a:hover {
     text-decoration: none !important; }
 
-/* line 352, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 357, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .fa-linkedin:hover {
   background: #0077B5; }
 
-/* line 356, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 361, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .fa-twitter:hover {
   background: #0084b4; }
 
-/* line 361, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 366, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .fa-github:hover {
   background: #343434; }
 
-/* line 366, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 371, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .fa-google-plus:hover {
   background: #cc1b07; }
 
-/* line 370, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
+/* line 375, /Users/justingaba/development/gabalicious.github.io/source/stylesheets/all.scss */
 .pomegranate {
-  color: #584783; }
+  color: #f85441; }
